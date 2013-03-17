@@ -3,7 +3,7 @@ maintainer       "Vyacheslav Slinko"
 maintainer_email "vyacheslav.slinko@gmail.com"
 license          "MIT"
 description      "My *nix user environment"
-version          "0.0.1"
+version          "0.0.2"
 
 recipe "vslinko", "Prepare my *nix user environment"
 
