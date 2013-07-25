@@ -1,3 +1,5 @@
+node.override["authorization"]["sudo"]["include_sudoers_d"] = true
+
 include_recipe "sudo"
 include_recipe "zsh"
 

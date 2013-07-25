@@ -10,5 +10,3 @@ else
   default["vslinko"]["group"] = default["vslinko"]["user"]
   default["vslinko"]["home"] = "/home/#{default["vslinko"]["user"]}"
 end
-
-override["authorization"]["sudo"]["include_sudoers_d"] = true
