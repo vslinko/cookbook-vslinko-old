@@ -1,4 +1,3 @@
-include_recipe "git"
 include_recipe "sudo"
 include_recipe "zsh"
 
@@ -31,3 +30,4 @@ file "#{node["vslinko"]["home"]}/.ssh/authorized_keys" do
 end
 
 include_recipe "vslinko::dotfiles"
+include_recipe "vslinko::vim"

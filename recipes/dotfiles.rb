@@ -1,3 +1,5 @@
+include_recipe "git"
+
 execute "#{node["vslinko"]["user"]}_dotfiles" do
   command <<-EOC
     git init

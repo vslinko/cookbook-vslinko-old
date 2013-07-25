@@ -11,6 +11,6 @@ recipe "vslinko", "Prepare my *nix user environment"
   supports os
 end
 
-%w{ git sudo zsh }.each do |cb|
+%w{ git sudo vim zsh }.each do |cb|
   depends cb
 end
