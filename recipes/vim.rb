@@ -1,3 +1,4 @@
+include_recipe "git"
 include_recipe "vim"
 
 dotvim = "#{node["vslinko"]["home"]}/.vim"
