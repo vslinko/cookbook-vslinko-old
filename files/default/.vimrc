@@ -1,25 +1,47 @@
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd vimenter * if !argc() | NERDTree | endif
+" plugins
 call pathogen#infect()
-colorscheme twilight
 filetype plugin indent on
-imap <C-b> <Esc><Leader>cili
-imap <S-Tab> <C-d>
-imap <Tab> <C-t>
-map <C-b> <Leader>ci
-map <C-m> :nohlsearch<CR>
-map <C-n> :NERDTreeToggle<CR>
-nmap <S-Tab> <<
-nmap <Tab> >>
+
+" environment
 set colorcolumn=80
 set cursorline
 set encoding=utf8
-set expandtab
-set hlsearch
-set incsearch
 set list
-set listchars=eol:¶,tab:»·,trail:·,nbsp:·
-set shiftwidth=2
+set listchars=tab:»·,trail:·,nbsp:·
+set number
 set showmatch
+syntax on
+colorscheme twilight
+
+" editor
+set backspace=2
+set expandtab
+set incsearch
+set shiftwidth=2
 set tabstop=2
+
+" show hidden files in filesystem tree
+let NERDTreeShowHidden=1
+
+" mappings
+noremap <C-b> <Leader>ci
+inoremap <C-b> <Esc><Leader>cili
+
+noremap <C-n> :NERDTreeToggle<CR>
+
+noremap <Tab> >>
+inoremap <Tab> <C-t>
+vnoremap <Tab> >gv
+
+noremap <S-Tab> <<
+inoremap <S-Tab> <C-d>
+vnoremap <S-Tab> <gv
+
+" trim trailing spaces before save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" open filesystem tree if vim opened without arguments
+autocmd vimenter * if !argc() | NERDTree | endif
+
+" close vim if opened only filesystem tree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

@@ -1,5 +1,5 @@
 ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="steeef"
+ZSH_THEME="essembeh"
 plugins=(brew coffee gem git knife npm sublime vagrant)
 source "$ZSH/oh-my-zsh.sh"
 
@@ -8,12 +8,17 @@ alias -r gaa="git add ."
 alias -r gdh="git diff HEAD --"
 hash -d qwe="$HOME/workspace"
 
-export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export EDITOR=vim
 export LANG=en_US.UTF-8
 
+if [ -d $HOME/.rvm ]; then
+  export PATH=$HOME/.rvm/bin:$PATH
+  source $HOME/.rvm/scripts/rvm
+fi
+
 if [ -d /usr/local/share/npm/bin ]; then
-  export PATH=$PATH:/usr/local/share/npm/bin
+  export PATH=/usr/local/share/npm/bin:$PATH
 fi
 
 npm_release() {
