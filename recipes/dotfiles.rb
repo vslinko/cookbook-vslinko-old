@@ -1,22 +1,14 @@
 include_recipe "git"
 
-execute "#{node["vslinko"]["user"]}_dotfiles" do
-  command <<-EOC
-    git init
-    git remote add origin #{node["vslinko"]["dotfiles"]}
-    git pull -u origin master
-    git submodule update --init
-  EOC
-  creates "#{node["vslinko"]["home"]}/.git"
-  cwd node["vslinko"]["home"]
-  group node["vslinko"]["group"]
+git "#{node["vslinko"]["home"]}/.oh-my-zsh" do
+  repository "https://github.com/robbyrussell/oh-my-zsh"
   user node["vslinko"]["user"]
+  group node["vslinko"]["group"]
 end
 
-git node["vslinko"]["home"] do
-  group node["vslinko"]["group"]
-  repository node["vslinko"]["dotfiles"]
-  user node["vslinko"]["user"]
-  enable_submodules true
-  action :sync
+%w{ .gitconfig .zshrc }.each do |file|
+  cookbook_file "#{node["vslinko"]["home"]}/#{file}" do
+    user node["vslinko"]["user"]
+    group node["vslinko"]["group"]
+  end
 end
