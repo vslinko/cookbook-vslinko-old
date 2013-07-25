@@ -42,7 +42,7 @@ vimbundles.each do |name, repository|
   end
 end
 
-template "#{node["vslinko"]["home"]}/.vimrc" do
+cookbook_file "#{node["vslinko"]["home"]}/.vimrc" do
   user node["vslinko"]["user"]
   group node["vslinko"]["group"]
 end
