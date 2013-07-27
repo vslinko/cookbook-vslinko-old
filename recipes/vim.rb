@@ -23,6 +23,7 @@ vimbundles = {
   "nerdcommenter" => "https://github.com/scrooloose/nerdcommenter.git",
   "nerdtree" => "https://github.com/scrooloose/nerdtree.git",
   "vim-coffee-script" => "https://github.com/kchmck/vim-coffee-script.git",
+  "vim-jade" => "https://github.com/digitaltoad/vim-jade.git",
   "vim-twilight" => "https://github.com/matthewtodd/vim-twilight.git"
 }
 
