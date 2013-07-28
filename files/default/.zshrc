@@ -10,6 +10,7 @@ hash -d qwe="$HOME/workspace"
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export EDITOR=vim
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 if [ -d $HOME/.rvm ]; then
