@@ -29,6 +29,8 @@ inoremap <C-b> <Esc><Leader>cili
 
 noremap <C-n> :NERDTreeToggle<CR>
 
+noremap <C-l> :set nonumber!<CR>
+
 noremap <Tab> >>
 inoremap <Tab> <C-t>
 vnoremap <Tab> >gv
