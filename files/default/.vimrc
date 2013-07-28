@@ -9,7 +9,6 @@ set encoding=utf8
 set list
 set listchars=tab:»·,trail:·,nbsp:·
 set number
-set showmatch
 syntax on
 colorscheme twilight
 
@@ -22,6 +21,9 @@ set tabstop=2
 
 " show hidden files in filesystem tree
 let NERDTreeShowHidden=1
+
+" disable matchparen plugin
+let loaded_matchparen=1
 
 " mappings
 noremap <C-b> <Leader>ci
