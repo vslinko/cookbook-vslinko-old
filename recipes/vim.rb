@@ -20,11 +20,20 @@ remote_file "#{dot_vim}/autoload/pathogen.vim" do
 end
 
 vimbundles = {
+  "ctrlp.vim" => "https://github.com/kien/ctrlp.vim.git",
+  "jellybeans.vim" => "https://github.com/nanotech/jellybeans.vim.git",
   "nerdcommenter" => "https://github.com/scrooloose/nerdcommenter.git",
   "nerdtree" => "https://github.com/scrooloose/nerdtree.git",
+  "vim-abolish" => "https://github.com/tpope/vim-abolish.git",
+  "vim-autocomplpop" => "https://github.com/clones/vim-autocomplpop.git",
   "vim-coffee-script" => "https://github.com/kchmck/vim-coffee-script.git",
+  "vim-fugitive" => "http://github.com/tpope/vim-fugitive.git",
   "vim-jade" => "https://github.com/digitaltoad/vim-jade.git",
-  "vim-twilight" => "https://github.com/matthewtodd/vim-twilight.git"
+  "vim-l9" => "https://github.com/clones/vim-l9.git",
+  "vim-matchit" => "http://github.com/tsaleh/vim-matchit.git",
+  "vim-pastie" => "https://github.com/tpope/vim-pastie.git",
+  "vim-sensible" => "https://github.com/tpope/vim-sensible.git",
+  "vim-surround" => "https://github.com/tpope/vim-surround.git"
 }
 
 vimbundles.each do |name, repository|
