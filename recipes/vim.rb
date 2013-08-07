@@ -31,6 +31,7 @@ vimbundles = {
   "vim-jade" => "https://github.com/digitaltoad/vim-jade.git",
   "vim-l9" => "https://github.com/clones/vim-l9.git",
   "vim-matchit" => "http://github.com/tsaleh/vim-matchit.git",
+  "vim-multiple-cursors" => "https://github.com/terryma/vim-multiple-cursors",
   "vim-pastie" => "https://github.com/tpope/vim-pastie.git",
   "vim-sensible" => "https://github.com/tpope/vim-sensible.git",
   "vim-surround" => "https://github.com/tpope/vim-surround.git"
