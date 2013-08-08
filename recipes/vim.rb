@@ -20,6 +20,7 @@ remote_file "#{dot_vim}/autoload/pathogen.vim" do
 end
 
 vimbundles = {
+  "Vagrantfile.vim" => "https://github.com/robbevan/Vagrantfile.vim.git",
   "ctrlp.vim" => "https://github.com/kien/ctrlp.vim.git",
   "jellybeans.vim" => "https://github.com/nanotech/jellybeans.vim.git",
   "nerdcommenter" => "https://github.com/scrooloose/nerdcommenter.git",

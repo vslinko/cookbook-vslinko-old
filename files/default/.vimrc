@@ -43,6 +43,9 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 vnoremap <S-Tab> <gv
 
+" set filetypes
+autocmd BufRead,BufNewFile Berksfile set filetype=ruby
+
 " trim trailing spaces before save
 autocmd BufWritePre * :%s/\s\+$//e
 
