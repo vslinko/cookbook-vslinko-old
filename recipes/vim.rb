@@ -35,6 +35,7 @@ vimbundles = {
   "vim-multiple-cursors" => "https://github.com/terryma/vim-multiple-cursors",
   "vim-pastie" => "https://github.com/tpope/vim-pastie.git",
   "vim-sensible" => "https://github.com/tpope/vim-sensible.git",
+  "vim-stylus" => "https://github.com/wavded/vim-stylus.git",
   "vim-surround" => "https://github.com/tpope/vim-surround.git"
 }
 
