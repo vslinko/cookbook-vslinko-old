@@ -44,6 +44,7 @@ vimbundles.each do |name, repository|
     repository repository
     user node[:vslinko][:user]
     group node[:vslinko][:group]
+    ignore_failure
   end
 end
 
