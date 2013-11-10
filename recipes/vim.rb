@@ -20,23 +20,23 @@ remote_file "#{dot_vim}/autoload/pathogen.vim" do
 end
 
 vimbundles = {
-  "Vagrantfile.vim" => "https://github.com/robbevan/Vagrantfile.vim.git",
-  "ctrlp.vim" => "https://github.com/kien/ctrlp.vim.git",
-  "jellybeans.vim" => "https://github.com/nanotech/jellybeans.vim.git",
-  "nerdcommenter" => "https://github.com/scrooloose/nerdcommenter.git",
-  "nerdtree" => "https://github.com/scrooloose/nerdtree.git",
-  "vim-abolish" => "https://github.com/tpope/vim-abolish.git",
-  "vim-autocomplpop" => "https://github.com/clones/vim-autocomplpop.git",
-  "vim-coffee-script" => "https://github.com/kchmck/vim-coffee-script.git",
-  "vim-fugitive" => "http://github.com/tpope/vim-fugitive.git",
-  "vim-jade" => "https://github.com/digitaltoad/vim-jade.git",
-  "vim-l9" => "https://github.com/clones/vim-l9.git",
-  "vim-matchit" => "http://github.com/tsaleh/vim-matchit.git",
-  "vim-multiple-cursors" => "https://github.com/terryma/vim-multiple-cursors",
-  "vim-pastie" => "https://github.com/tpope/vim-pastie.git",
-  "vim-sensible" => "https://github.com/tpope/vim-sensible.git",
-  "vim-stylus" => "https://github.com/wavded/vim-stylus.git",
-  "vim-surround" => "https://github.com/tpope/vim-surround.git"
+  "Vagrantfile.vim" => "git://github.com/robbevan/Vagrantfile.vim.git",
+  "ctrlp.vim" => "git://github.com/kien/ctrlp.vim.git",
+  "jellybeans.vim" => "git://github.com/nanotech/jellybeans.vim.git",
+  "nerdcommenter" => "git://github.com/scrooloose/nerdcommenter.git",
+  "nerdtree" => "git://github.com/scrooloose/nerdtree.git",
+  "vim-abolish" => "git://github.com/tpope/vim-abolish.git",
+  "vim-autocomplpop" => "git://github.com/clones/vim-autocomplpop.git",
+  "vim-coffee-script" => "git://github.com/kchmck/vim-coffee-script.git",
+  "vim-fugitive" => "git://github.com/tpope/vim-fugitive.git",
+  "vim-jade" => "git://github.com/digitaltoad/vim-jade.git",
+  "vim-l9" => "git://github.com/clones/vim-l9.git",
+  "vim-matchit" => "git://github.com/tsaleh/vim-matchit.git",
+  "vim-multiple-cursors" => "git://github.com/terryma/vim-multiple-cursors",
+  "vim-pastie" => "git://github.com/tpope/vim-pastie.git",
+  "vim-sensible" => "git://github.com/tpope/vim-sensible.git",
+  "vim-stylus" => "git://github.com/wavded/vim-stylus.git",
+  "vim-surround" => "git://github.com/tpope/vim-surround.git"
 }
 
 vimbundles.each do |name, repository|
