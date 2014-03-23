@@ -14,7 +14,7 @@ directories.each do |directory|
 end
 
 remote_file "#{dot_vim}/autoload/pathogen.vim" do
-  source "https://raw.github.com/vim-scripts/pathogen.vim/master/plugin/pathogen.vim"
+  source "https://raw.githubusercontent.com/vim-scripts/pathogen.vim/master/autoload/pathogen.vim"
   owner node[:vslinko][:user]
   group node[:vslinko][:group]
 end
